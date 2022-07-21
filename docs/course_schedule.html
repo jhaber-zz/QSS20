@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>QSS 20. Modern Statistical Computing &#8212; QSS 20. Modern Statistical Computing</title>
+    <title>Course schedule &#8212; QSS 20. Modern Statistical Computing</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Course schedule" href="course_schedule.html" />
+    <link rel="next" title="Dartmouth Policies" href="dartmouth_policies.html" />
+    <link rel="prev" title="QSS 20. Modern Statistical Computing" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -109,9 +110,9 @@ const thebe_selector_output = ".output, .cell_output"
   Course Overview
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="course_schedule.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Course schedule
   </a>
  </li>
@@ -171,6 +172,35 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/quantecon-mini-example/master?urlpath=tree/mini_book/docs/course_schedule.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -193,7 +223,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/docs/index.md"
+        <a href="../_sources/docs/course_schedule.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -204,7 +234,7 @@ title="Download source file"
 <span class="headerbtn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.md</span>
+<span class="headerbtn__text-container">.ipynb</span>
 </a>
 
       </li>
@@ -230,60 +260,23 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#prerequisites">
-   Prerequisites
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>QSS 20. Modern Statistical Computing</h1>
+                <h1>Course schedule</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#prerequisites">
-   Prerequisites
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -291,21 +284,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="qss-20-modern-statistical-computing">
-<h1>QSS 20. Modern Statistical Computing<a class="headerlink" href="#qss-20-modern-statistical-computing" title="Permalink to this headline">#</a></h1>
-<p>Social scientists are investigating questions that have led to two changes in their computing workflow.</p>
-<p>One change is the use of new forms of data, such as <a class="reference external" href="https://www.pnas.org/content/114/25/6521">text data to study how police officers use different language when interacting with Black drivers than with White drivers</a>; <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2927813/">spatial data to study the geographic clustering of autism diagnoses in more affluent communities</a>; <a class="reference external" href="https://arxiv.org/pdf/2011.07194.pdf">cellphone mobility data to (try) to estimate COVID-19 mobility patterns</a>.</p>
-<p>The second change is the use of new methods to discern patterns in data. Imagine a relatively simple dataset where each individual is described by a limited number of characteristics: for instance, a student and his or her demographic attributes and high school end-of-year grades. Now imagine augmenting that dataset with the forms of data described above–we know the student’s address and can thus merge in spatial data on neighborhood characteristics; we have qualitative notes from the teacher’s end-of-year reports and can investigate how those qualitative impressions correlate with grades. These require you as the researcher to have the facility to quickly pick up new methods to find patterns in large-scale data, with the methods and tools developing at a rapid pace.</p>
-<p>This course is meant to build upon your introductory programming course and to equip you with the computing literacy to conduct social science research in the age of “big data.” This has two core components. First is learning the background tools (e.g.,<a class="reference external" href="https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners">Git/Github</a>; <a class="reference external" href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes">LaTeX</a>; working on the command line) to conduct transparent and reproducible research. Second is learning programming skills essential for social science in the big data era, with a focus on using Python for various applied tasks as well as R for tasks like data visualization and SQL for tasks like working with the relational databases that form the backbone of many real-world government and commercial datasets.</p>
-<section id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p><em>Required</em>: COSC 1, ENGS 20, or another programming course approved by the QSS Chair.</p></li>
-<li><p><em>Recommended</em>: introductory statistics course.</p></li>
-</ul>
-</section>
-<div class="toctree-wrapper compound">
-</div>
+  <section id="course-schedule">
+<h1>Course schedule<a class="headerlink" href="#course-schedule" title="Permalink to this headline">#</a></h1>
+<p>The course will meet on Monday and Wednesday from 3:30 to 5:20 PM EST. I will provide a complete schedule closer to the beginning of the term.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -335,10 +316,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="course_schedule.html" title="next page">
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">QSS 20. Modern Statistical Computing</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="dartmouth_policies.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Course schedule</p>
+        <p class="prev-next-title">Dartmouth Policies</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
