@@ -1,12 +1,12 @@
 #######################################################################################
 # Book settings
 title : QSS 20. Modern Statistical Computing
-author: Rebecca Johnson
+author: Jaren Haber
 logo: 'laptop.png'
 
 # Information about where the book exists on the web
 description: >-
-  This is the course page for QSS20: Modern Statistical Computing. 
+  This repository houses the code for the Jupyter Book for QSS20: Modern Statistical Computing, a course in the Quantitative Social Science program at Dartmouth College. This course is taught by Jaren Haber.
 
 #######################################################################################
 # Execution settings

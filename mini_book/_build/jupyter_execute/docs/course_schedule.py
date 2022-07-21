@@ -1,8 +1,16 @@
-## Course schedule
+#!/usr/bin/env python
+# coding: utf-8
 
-Here is the current week-by-week schedule 📅 . We may adjust as we go along. To get started, we're going to create the calendar of weeks for the course programmatically rather than manually!
+# ## Course schedule
+# 
+# Here is the current week-by-week schedule 📅 . We may adjust as we go along. To get started, we're going to create the calendar of weeks for the course programmatically rather than manually!
+# 
+# The course will be offered in two distinct sessions, which will each follow the same schedule and have common deadlines for problem sets. To make things simpler:
+# 
+# - 3A/Section 01: Monday-Wednesday schedule
+# - 6A/Section 02: Monday-Thursday schedule; the Thursday content will correspond to Section 01's Wednesday content
 
-The course will be offered in two distinct sessions, which will each follow the same schedule.
+# In[1]:
 
 
 ## import modules
@@ -18,59 +26,80 @@ InteractiveShell.ast_node_interactivity = "all"
 
 ## create range b/t start and end date
 ## of course 
-start_date = pd.to_datetime("2022-01-04")
+start_date = pd.to_datetime("2022-01-05")
 end_date = pd.to_datetime("2022-03-08")
 st_alldates = pd.date_range(start_date, end_date)
 
 ## subset to days in that range equal to Tuesday or Thursday
-st_tuth = st_alldates[st_alldates.day_name().isin(['Tuesday', 'Thursday'])]
+st_mw_3A = st_alldates[st_alldates.day_name().isin(['Monday', 'Wednesday'])]
+st_mt_6A = st_alldates[st_alldates.day_name().isin(['Monday', 'Thursday'])]
 
 ## create data frame with that information
-st_dates = [re.sub("2022\\-", "", str(day.date())) for day in st_tuth] 
-course_sched = pd.DataFrame({'dow': st_tuth.day_name(), 'st_tuth': st_dates})
-course_sched['date_toprint'] = course_sched.dow.astype(str) + " " + \
-            course_sched.st_tuth.astype(str) 
-course_sched = course_sched['date_toprint']
+st_dates_3A = [re.sub("2022\\-", "", str(day.date())) for day in st_mw_3A] 
+st_dates_6A = [re.sub("2022\\-", "", str(day.date())) for day in st_mt_6A] 
+course_sched = pd.DataFrame({'dow_3A': st_mw_3A.day_name(),
+                             'dow_6A': st_mt_6A.day_name(),
+                             'date_3A': st_dates_3A,
+                            'date_6A': st_dates_6A})
+course_sched['Dates_3Asection'] = course_sched.dow_3A.astype(str) + " " + \
+            course_sched.date_3A.astype(str) 
+course_sched['Dates_6Asection'] = course_sched.dow_6A.astype(str) + " " + \
+            course_sched.date_6A.astype(str)
+
+course_sched_display = course_sched[['Dates_3Asection', 
+                                     'Dates_6Asection']].copy()
 
 ## display the resulting date sequence
-display(course_sched)
+display(course_sched_display)
 
 ## next block of code creates the
 ## actual content; can click "show"
 ## to see the underlying code
 
+
+# In[2]:
+
+
 ## create the actual content
 
 ### list of concepts
 concepts = ["Course intro. and checking software setup",
-             "Workflow basics: command line, Github workflow, basic LaTeX syntax, pre-analysis plans",
-            "Workflow basics (continued)",
-             "Python pandas review: aggregation, joins, lambda and user-defined functions",
-            "Python pandas review: aggregation, joins, lambda and user-defined functions",
-                        "Problem set one work session",
+             "Python pandas: aggregation, joins, lambda and user-defined functions",
+            "Python pandas: aggregation, joins, lambda and user-defined functions (continued)",
+             "MLK day (no class)",
+            "Workflow basics: command line/jhub, Github workflow",
             "Intro to merging",
             "Regex",
-            "Probabilistic matching: part one",
-            "Probabilistic matching: part two",
-             "Text as data: part one",
+            "Probabilistic matching",
+            "Text as data: part one",
             "Text as data: part two",
-            "Problem set two work session and intro to APIs",
-             "APIs continued",
-             "APIs continued; SQL part one",
-             "SQL part two",
-            "Final project work session",
-             "Scraping + final project work session",
+            "Text as data: part two (continued)",
+            "APIs (part 1)",
+             "APIs (twitter)",
+             "Supervised machine learning",
+             "SQL",
+            "Interactive data viz. or web scraping (if time)",
+             "Final project work session",
              "Final presentations"]
 
-len(course_sched)
-len(concepts)
+## check that concepts match number of weeks
+assert len(course_sched_display.Dates_3Asection) == len(concepts)
+assert len(course_sched_display.Dates_6Asection) == len(concepts)
+
+
+
 ## combine
-course_sched_concepts = pd.DataFrame({'Week': course_sched,
+course_sched_concepts = pd.DataFrame({'Week_3A': course_sched_display.Dates_3Asection,
+                                      'Week_6A': course_sched_display.Dates_6Asection,
                                      'Concepts': concepts})
 
 df = course_sched_concepts.copy()
 
 print(df)
+
+
+# In[3]:
+
 
 ## add datacamp modules conditionally
 col = "Concepts"
@@ -95,34 +124,20 @@ col = "Concepts"
 #                    "Intermediate SQL",
 #                    "Importing JSON data and working with APIs; Importing data from the Internet"]
 
-topics_trunc = [df[col] ==  "Workflow basics (continued)",
-               df[col] == "Merging (continued) and PSET 1 review"]
+topics_trunc = [df[col] ==  "Python pandas: aggregation, joins, lambda and user-defined functions",
+               df[col] == "Intro to merging",
+               df[col] == "Probabilistic matching",
+               df[col] == "Supervised machine learning"]
 datacamp_modules_trunc = ["Data manipulation with Pandas",
-                         "Regular expressions for pattern matching"]
+                          "Joining data with pandas",
+                         "Regular expressions for pattern matching",
+                         "Supervised Learning with scikit-learn"]
 
 df["DataCamp module(s) (if any)"] = np.select(topics_trunc, 
                                      datacamp_modules_trunc, 
                                      default = "")
 
 
-date_col = "Week"
-due_dates = [df[date_col] == "Tuesday 04-20",
-            df[date_col] == "Tuesday 04-27",
-            df[date_col] == "Thursday 05-13",
-             df[date_col] == "Tuesday 05-18",
-             df[date_col] == "Thursday 05-20",
-            df[date_col] == "Tuesday 06-01"]
-assig = ["Problem set one",
-        "Final project step 1",
-        "Problem set two: part one",
-        "Problem set two: part two",
-        "Final project step 2 (due Sunday 05.23 at 11:59 PM EST)",
-        "Slides for final presentation (due Tuesday 06.01 at 5 PM EST)"]
-
-
-df["Due (11:59 PM EST unless otherwise specified)"] = np.select(due_dates,
-                     assig,
-                     default = "")
 
 ## add slides or tutorial link
 # df['Link to slides or tutorial'] = np.select([df["Concepts"] == "Course intro. and checking software setup",
@@ -142,6 +157,30 @@ df["Due (11:59 PM EST unless otherwise specified)"] = np.select(due_dates,
 # df['Link to activity (blank)'] = np.where(df['Link to activity (blank)'] != "",
 #                         '<a target="_blank" href=' + df['Link to activity (blank)'] + '><div>' + "Link" + '</div></a>',
 #                         "")
+
+
+# In[11]:
+
+
+date_col = "Week_3A"
+due_dates = [df[date_col] == "Wednesday 01-12",
+            df[date_col] == "Wednesday 01-26",
+             df[date_col] == "Wednesday 02-09",
+             df[date_col] == "Wednesday 02-23",
+            df[date_col] == "Monday 03-07"]
+assig = ["Problem set one (due Sunday 01-16)",
+         "Problem set two (due Friday 01-28)",
+        "Final project milestone 1 (due Wednesday 02-09);<br>Problem set three (due Friday 02-11)",
+         "Problem set four (due Friday 02-25);<br>Final project milestone 2 (due Sunday 02-27) ",
+        "Problem set five (due Friday 03-11);<br>Final project presentation (paper due on Monday 03-14)"]
+
+
+df["Due (11:59 PM EST unless otherwise specified)"] = np.select(due_dates,
+                     assig,
+                     default = "")
+
+
+# In[12]:
 
 
 HTML(df.to_html(index=False, escape = False))

@@ -4,10 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Evaluation and grading &#8212; QSS 20. Modern Statistical Computing</title>
     
-  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -17,83 +20,97 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
-
-    
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/language_data.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Dartmouth Policies" href="dartmouth_policies.html" />
     <link rel="prev" title="Final Project: Social Impact Practicum" href="sip_finalproject.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
 
-
-
+    <!-- Google Analytics -->
+    
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../index.html">
-  
-  <img src="../_static/laptop.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">QSS 20. Modern Statistical Computing</h1>
-  
-</a>
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/laptop.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">QSS 20. Modern Statistical Computing</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <p class="caption collapsible-parent">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Course Overview
  </span>
 </p>
-<ul class="current nav sidenav_l1">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="course_schedule.html">
    Course schedule
@@ -114,18 +131,13 @@
    Dartmouth Policies
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="enrollment.html">
-   Enrollment and Waitlist
-  </a>
- </li>
 </ul>
-<p class="caption collapsible-parent">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Software setup
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="software_setup.html">
    Overview of tools
@@ -133,91 +145,165 @@
  </li>
 </ul>
 
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
     </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/docs/eval_grades_py.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-        <!-- Source interaction buttons -->
-
-
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
-
-        <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/quantecon-mini-example/master?urlpath=tree/mini_book/docs/eval_grades_py.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
-    </div>
-
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
         </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/quantecon-mini-example/master?urlpath=tree/mini_book/docs/eval_grades_py.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/docs/eval_grades_py.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#summary-and-grading-policy">
    Summary and grading policy
@@ -234,8 +320,8 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#two-problem-sets-25-of-grade-each-50-total">
-     Two problem sets (25% of grade, each; 50% total)
+    <a class="reference internal nav-link" href="#five-problem-sets-10-20-of-grade-each-50-total">
+     Five problem sets (10-20% of grade, each; 50% total)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -252,20 +338,70 @@
  </li>
 </ul>
 
-        </nav>
-        
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Evaluation and grading</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-and-grading-policy">
+   Summary and grading policy
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#details">
+   Details
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#datacamp-modules-to-support-programming-topics-5-of-grade">
+     Datacamp modules to support programming topics (5% of grade)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#five-problem-sets-10-20-of-grade-each-50-total">
+     Five problem sets (10-20% of grade, each; 50% total)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#final-project-35-of-grade">
+     Final project (35% of grade)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#team-player-participation-10-of-grade">
+     Team player/participation (10% of grade)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="section" id="evaluation-and-grading">
-<h1>Evaluation and grading<a class="headerlink" href="#evaluation-and-grading" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="summary-and-grading-policy">
-<h2>Summary and grading policy<a class="headerlink" href="#summary-and-grading-policy" title="Permalink to this headline">¶</a></h2>
-<p>You will have four cumulative late days for assignments, that can be apportioned as you see fit between the problem set one and problem set two. Late days cannot be used for the final project or final presentation. If you run over and have not submitted the pset by the following Monday, I ask that you not attend class as not to see the answers. There will be a deduction of 10 percentage points for each late day after you have used your allowed late days.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="evaluation-and-grading">
+<h1>Evaluation and grading<a class="headerlink" href="#evaluation-and-grading" title="Permalink to this headline">#</a></h1>
+<section id="summary-and-grading-policy">
+<h2>Summary and grading policy<a class="headerlink" href="#summary-and-grading-policy" title="Permalink to this headline">#</a></h2>
+<p>You will have four cumulative late days for assignments, that can be apportioned as you see fit between the different problem sets. Late days cannot be used for the final project or final presentation. If you run over and have not submitted the pset by the following class, I ask that you not attend class as not to see the answers. There will be a deduction of 10 percentage points for each late day after you have used your allowed late days.</p>
 <p>Grades may be curved if there are no students receiving A’s on the non-curved grading scale.</p>
 <div class="cell tag_hide_input docutils container">
 <div class="cell_input docutils container">
@@ -276,7 +412,7 @@
 
 <span class="n">grade_summary</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Assignments&#39;</span><span class="p">:</span>
                 <span class="p">[</span><span class="s2">&quot;Datacamp modules&quot;</span><span class="p">,</span>
-                  <span class="s2">&quot;Two problem sets&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Five problem sets&quot;</span><span class="p">,</span>
                   <span class="s2">&quot;Final project&quot;</span><span class="p">,</span>
                   <span class="s2">&quot;Team player/participation&quot;</span><span class="p">],</span>
                 <span class="s1">&#39;Percentage&#39;</span><span class="p">:</span>
@@ -286,9 +422,8 @@
                   <span class="mi">10</span><span class="p">],</span>
                 <span class="s1">&#39;Deadlines&#39;</span><span class="p">:</span>
                 <span class="p">[</span><span class="s2">&quot;Throughout&quot;</span><span class="p">,</span>
-                  <span class="s2">&quot;Pset one: Thurs. 04-15; </span><span class="se">\</span>
-<span class="s2">                  Pset two: Thurs. 05-13 and Tues. 05-18&quot;</span><span class="p">,</span>
-                  <span class="s2">&quot;Presentation: Tuesday 06-01; Short report: Sunday 06-06&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Throughout (see course schedule and Canvas)&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Presentation: Monday March 07; Short report: Monday March 14 (both sections)&quot;</span><span class="p">,</span>
                   <span class="s2">&quot;Throughout&quot;</span><span class="p">]})</span> 
 
 <span class="n">HTML</span><span class="p">(</span><span class="n">grade_summary</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
@@ -311,14 +446,14 @@
       <td>Throughout</td>
     </tr>
     <tr>
-      <td>Two problem sets</td>
+      <td>Five problem sets</td>
       <td>50</td>
-      <td>Pset one: Thurs. 04-15;                   Pset two: Thurs. 05-13 and Tues. 05-18</td>
+      <td>Throughout (see course schedule and Canvas)</td>
     </tr>
     <tr>
       <td>Final project</td>
       <td>35</td>
-      <td>Presentation: Tuesday 06-01; Short report: Sunday 06-06</td>
+      <td>Presentation: Monday March 07; Short report: Monday March 14 (both sections)</td>
     </tr>
     <tr>
       <td>Team player/participation</td>
@@ -328,19 +463,19 @@
   </tbody>
 </table></div></div>
 </div>
-</div>
-<div class="section" id="details">
-<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="datacamp-modules-to-support-programming-topics-5-of-grade">
-<h3>Datacamp modules to support programming topics (5% of grade)<a class="headerlink" href="#datacamp-modules-to-support-programming-topics-5-of-grade" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">#</a></h2>
+<section id="datacamp-modules-to-support-programming-topics-5-of-grade">
+<h3>Datacamp modules to support programming topics (5% of grade)<a class="headerlink" href="#datacamp-modules-to-support-programming-topics-5-of-grade" title="Permalink to this headline">#</a></h3>
 <p>The DataCamp modules are mainly to support your work on the problem sets and final project by giving you additional practice prior to our in-class activities. As a result, they will be graded on a “complete” and “incomplete” basis, regardless of how many points you received on the assignment itself. This means that you shouldn’t get stuck partway through, since you can always ask to be shown the answer with a points deduction. Conversely, if the concepts are review, these should be very quick to complete, but if you’d prefer to skip, you can talk to me and I will reapportion the 5% to your second problem set.</p>
-</div>
-<div class="section" id="two-problem-sets-25-of-grade-each-50-total">
-<h3>Two problem sets (25% of grade, each; 50% total)<a class="headerlink" href="#two-problem-sets-25-of-grade-each-50-total" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="five-problem-sets-10-20-of-grade-each-50-total">
+<h3>Five problem sets (10-20% of grade, each; 50% total)<a class="headerlink" href="#five-problem-sets-10-20-of-grade-each-50-total" title="Permalink to this headline">#</a></h3>
 <p>DataCamp provides a very smooth introduction to programming, in the sense that they provide you with example code that gets you ~80% of the way to the solution, with you needing to apply that code to reach the other ~20%.</p>
-<p>In contrast, the two problems sets will assess your ability to apply the concepts to data that is substantially messier, and problems that are substantially more difficult, than the ones in the DataCamp modules. More details on the problem sets will be provided the week before each is released,  but roughly, the workflow will be:</p>
+<p>In contrast, the problems sets will assess your ability to apply the concepts to data that is substantially messier, and problems that are substantially more difficult, than the ones in the DataCamp modules. More details on the problem sets will be provided the week before each is released,  but roughly, the workflow will be:</p>
 <ul class="simple">
-<li><p>Accessing the problem set and data via GitHub and/or jhub</p></li>
+<li><p>Accessing the problem set and data via Canvas (pset one) or GitHub and/or jhub (psets two - five)</p></li>
 <li><p>Working to produce the following outputs for each problem set:</p>
 <ul>
 <li><p>A raw .ipynb (or .Rmd file) with the code for the pset</p></li>
@@ -350,10 +485,10 @@
 </li>
 </ul>
 <p>The problem sets will be graded on both accuracy and programming style. For instance, by our second problem set, you will have learned to write functions. The problem set will be designed to test those concepts and if you revert, for instance, to writing repeated code that could be replaced with a function, points will be deducted even if that inefficient code arrives at the correct answer.</p>
-<p><strong>Collaboration</strong>: problem set one will be 80% group based and 20% individual (each person will submit a single problem set reflecting the work of the group for the first 80% and your own work for the individual problem). Problem set two will be fully individual. You should ask all questions on Slack in public channels and I may ask you to delete a post if it shows too much of a solution.</p>
-</div>
-<div class="section" id="final-project-35-of-grade">
-<h3>Final project (35% of grade)<a class="headerlink" href="#final-project-35-of-grade" title="Permalink to this headline">¶</a></h3>
+<p>Your lowest problem set grade of the five will be dropped.</p>
+</section>
+<section id="final-project-35-of-grade">
+<h3>Final project (35% of grade)<a class="headerlink" href="#final-project-35-of-grade" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>I will randomly assign groups of 3-4 a few meetings in to the quarter. I’ve found that this is more effective than letting you choose your own groups for teaching you how to collaborate on technical projects with people who you may not always see eye to eye with!</p></li>
 <li><p>I’ll be releasing instructions on Canvas for two preliminary project milestones</p></li>
@@ -371,20 +506,26 @@
 <li><p>A set of code files that transform that data into a form usable to answer the question you have posed in your descriptive research proposal.</p></li>
 <li><p>Final output:</p>
 <ol class="simple">
-<li><p>A 10-minute presentation, written in Beamer (presented in class on <strong>Tuesday June 1st</strong>).</p></li>
-<li><p>A report written in the computer science-style conference proceedings (10 pages; will share a template; due <strong>Sunday June 6th</strong>).</p></li>
+<li><p>A 10-minute presentation, written in Beamer (presented in class on the dates listed above).</p></li>
+<li><p>A report written in the computer science-style conference proceedings (10 pages; will share a template; due <strong>Monday March 14th</strong>).</p></li>
 </ol>
 </li>
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="team-player-participation-10-of-grade">
-<h3>Team player/participation (10% of grade)<a class="headerlink" href="#team-player-participation-10-of-grade" title="Permalink to this headline">¶</a></h3>
-<p>We will be using a <code class="docutils literal notranslate"><span class="pre">#problemset</span></code> channel in our class Slack for you to ask questions about roadblocks you encounter with the DataCamp activities or on the problem sets. While I will be answering questions within a window of 24 hours, I encourage you to help each other and answer each other’s questions. Your participation grade will reflect whether you’ve helped your classmates on the forum and your participation in class.</p>
-</div>
-</div>
-</div>
+</section>
+<section id="team-player-participation-10-of-grade">
+<h3>Team player/participation (10% of grade)<a class="headerlink" href="#team-player-participation-10-of-grade" title="Permalink to this headline">#</a></h3>
+<p>Data science is a highly collaborative activity in the real world and you should think of your classmates as resources rather than as competition. This part of your grade will reflect:</p>
+<ul class="simple">
+<li><p>Participation in class and help making the class interactive</p></li>
+<li><p>Participation in coding activities in class in small groups</p></li>
+<li><p>Contributions to your group’s final project</p></li>
+<li><p>Helping classmates on Slack: for this, we will be using a <code class="docutils literal notranslate"><span class="pre">#problemset</span></code> channel in our class Slack for you to ask questions about roadblocks you encounter with the DataCamp activities or on the problem sets. While I will be answering questions within a window of 24 hours, I encourage you to help each other and answer each other’s questions.</p></li>
+</ul>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -408,36 +549,48 @@
 
               </div>
               
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="sip_finalproject.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Final Project: Social Impact Practicum</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="dartmouth_policies.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Dartmouth Policies</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
         </div>
     </div>
-    
-    
-    <div class='prev-next-bottom'>
-        
-    <a class='left-prev' id="prev-link" href="sip_finalproject.html" title="previous page">Final Project: Social Impact Practicum</a>
-    <a class='right-next' id="next-link" href="dartmouth_policies.html" title="next page">Dartmouth Policies</a>
-
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Jaren Haber<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          By Rebecca Johnson<br/>
-        
-            &copy; Copyright 2020.<br/>
-      </p>
-    </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
-    
-  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
 
-
-    
   </body>
 </html>

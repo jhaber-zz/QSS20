@@ -2,7 +2,7 @@
 
 # Final Project: Social Impact Practicum
 
-For our final course project, we are going to be applying the data science skills you learn in the course to an important matter of public policy: how well are U.S. employers' protecting the health and safety of temporary guestworkers?
+For our final course project, we are going to be applying the data science skills you learn in the course to an important matter of public policy: how have those with disabilities fared during COVID-19 and what racial inequalities do we see in its impact?
 
 With support from the [Dartmouth Center for Social Impact](https://students.dartmouth.edu/social-impact/), our final project will be a [Social Impact Practicum](https://students.dartmouth.edu/social-impact/programs-initiatives/students/social-impact-practicums-sips), or a chance for you to use your data science skills to help a real-world organization.
 
@@ -11,7 +11,9 @@ With support from the [Dartmouth Center for Social Impact](https://students.dart
 
 The START (Systemic, Therapeutic, Assessment, Resources, and Treatment) model at the University of New Hampshire is a comprehensive model of service supporting the optimization of independence, treatment, and community living for individuals with intellectual/developmental disabilities (IDD) and mental health needs. Here is a website with more information about their work: [The Center for Start Services](https://centerforstartservices.org/)
 
-## Data process and possible broad questions:
+## Potential broad questions
+
+The SIP process will be focused on narrowing down broad questions to use the data to investigate. A few potential ones include:
 
 ### 1. COVID-19 and changes in suicidal ideation: 
 
@@ -31,5 +33,5 @@ START conducts semi-structured interviews with caregivers of participants using 
 
 ## Logistics
 
-As described in the main section of the syllabus, you'll be split into assigned groups to work on sub-components of the project. We'll be working from the following common repo that you'll be added to, and have push/commit privileges for, when you're set up on GitHub.
+As described in the main section of the syllabus, you'll be split into assigned groups to work on sub-components of the project. We'll be working from a common repo that you'll be added to, and have push/commit privileges for, when you're set up on GitHub.
 

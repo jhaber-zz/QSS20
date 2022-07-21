@@ -20,9 +20,9 @@ We will be using the following tools in the course:
     - `#pythonhelp_general`: this channel can be used for general python questions, and we'll also have problem set specific channels.
     - `#datacamp_questions`: these are questions about DataCamp, esp. about making sure your account is set up.
     
-- **Remote computing environment (for shorthand: jhub)**: [Arnold Song in Dartmouth’s Research Computing](https://itc.dartmouth.edu/people/arnold-song) has generously set up a dedicated course server on Dartmouth's jupyter hub. This allows you to open up any browser (chrome; firefox) etc. and complete Python tutorials without needing to download data or files locally / deal with package installation issues. More details on the server are below.
+- **Remote computing environment (for shorthand: jhub)**: [Arnold Song in Dartmouth’s Research Computing](https://itc.dartmouth.edu/people/arnold-song) will be setting up a dedicated course server on Dartmouth's jupyter hub. This allows you to open up any browser (chrome; firefox) etc. and complete Python tutorials without needing to download data or files locally / deal with package installation issues. More details on the server are below.
 
-- **Locally-installed python (for shorthand: local python)**: eventually, you'll leave the course and Dartmouth and need to know how to use Python locally. So in addition to jhub, I'm asking you to install the necessary software to run things locally: Python 3.7+ via the Anaconda distribution system
+- **Locally-installed python (for shorthand: local python)**: eventually, you'll leave the course and Dartmouth and need to know how to use Python locally. So in addition to jhub, I'm asking you to install the necessary software to run things locally: Python 3.8+ via the Anaconda distribution system
 
 - **Terminal/terminal emulator**: mainly for interfacing with Git/GitHub. See instructions below for installation.
 
@@ -35,7 +35,7 @@ We won't be using a non-online LaTeX editor, but you can find information on ins
 
 ## Jhub
 
-Here are the instructions:
+Here are the instructions that will be relevant once JHUB is activated (~ week of January 10th):
 
 **Step one**: Navigate to: [jhub.dartmouth.edu](https://jhub.dartmouth.edu/) while logged in with your Dartmouth netid. If you're off campus, you may need to connect to Dartmouth VPN ([instructions here and email Dartmouth IT about issues](https://services.dartmouth.edu/TDClient/1806/Portal/KB/ArticleDet?ID=66806)). You should see an option for a course. Click on it and the server will start up (takes 20-30 seconds)
 
@@ -89,7 +89,7 @@ Content that I create for you guys (slides; in-class activities) should automati
 
 ## Local Python
 
-Please download Python 3.8 (if compatible with your OS) or Python 3.7 through the Anaconda distribution system
+Please download Python 3.8+ (if compatible with your OS) or Python 3.7 through the Anaconda distribution system. 3.8+ is strongly preferred due to compatibility between pkl files
 
 [https://www.anaconda.com/products/individual](https://www.anaconda.com/products/individual)
 
@@ -132,7 +132,7 @@ A couple popular ones are:
 
 ## Git/GitHub
 
-We'll go over more Git/GitHub instructions during the class session. Before that session:
+We'll go over more Git/GitHub instructions during the relevant class session. Before that session:
 
 1. Install Git if it's not installed already: [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
