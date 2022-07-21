@@ -1,0 +1,15 @@
+# - file: README
+- file: docs/index
+
+- part: Course Overview
+  chapters:
+    - file: docs/course_schedule
+    - file: docs/sip_finalproject
+    - file: docs/eval_grades_py
+    - file: docs/dartmouth_policies
+- part: Software setup
+  chapters:
+    - file: docs/software_setup
+
+  
+

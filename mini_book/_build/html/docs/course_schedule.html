@@ -1,0 +1,624 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course schedule &#8212; QSS 20. Modern Statistical Computing</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Final Project: Social Impact Practicum" href="sip_finalproject.html" />
+    <link rel="prev" title="QSS 20/PBPL 40.01 Modern Statistical Computing" href="index.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/laptop.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">QSS 20. Modern Statistical Computing</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  Course Overview
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Course schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sip_finalproject.html">
+   Final Project: Social Impact Practicum
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="eval_grades_py.html">
+   Evaluation and grading
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dartmouth_policies.html">
+   Dartmouth Policies
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="enrollment.html">
+   Enrollment and Waitlist
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Software setup
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="software_setup.html">
+   Overview of tools
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/docs/course_schedule.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/quantecon-mini-example/master?urlpath=tree/mini_book/docs/course_schedule.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="course-schedule">
+<h1>Course schedule<a class="headerlink" href="#course-schedule" title="Permalink to this headline">¶</a></h1>
+<p>Here is the current week-by-week schedule 📅 . We may adjust as we go along. To get started, we’re going to create the calendar of weeks for the course programmatically rather than manually!</p>
+<p>The course will be offered in two distinct sessions, which will each follow the same schedule.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## import modules</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+
+<span class="c1">## tell python to display output and print multiple objects</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+<span class="kn">from</span> <span class="nn">IPython.core.interactiveshell</span> <span class="kn">import</span> <span class="n">InteractiveShell</span>
+<span class="n">InteractiveShell</span><span class="o">.</span><span class="n">ast_node_interactivity</span> <span class="o">=</span> <span class="s2">&quot;all&quot;</span>
+
+<span class="c1">## create range b/t start and end date</span>
+<span class="c1">## of course </span>
+<span class="n">start_date</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="s2">&quot;2022-01-04&quot;</span><span class="p">)</span>
+<span class="n">end_date</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="s2">&quot;2022-03-08&quot;</span><span class="p">)</span>
+<span class="n">st_alldates</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start_date</span><span class="p">,</span> <span class="n">end_date</span><span class="p">)</span>
+
+<span class="c1">## subset to days in that range equal to Tuesday or Thursday</span>
+<span class="n">st_tuth</span> <span class="o">=</span> <span class="n">st_alldates</span><span class="p">[</span><span class="n">st_alldates</span><span class="o">.</span><span class="n">day_name</span><span class="p">()</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Thursday&#39;</span><span class="p">])]</span>
+
+<span class="c1">## create data frame with that information</span>
+<span class="n">st_dates</span> <span class="o">=</span> <span class="p">[</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;2022</span><span class="se">\\</span><span class="s2">-&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">day</span><span class="o">.</span><span class="n">date</span><span class="p">()))</span> <span class="k">for</span> <span class="n">day</span> <span class="ow">in</span> <span class="n">st_tuth</span><span class="p">]</span> 
+<span class="n">course_sched</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;dow&#39;</span><span class="p">:</span> <span class="n">st_tuth</span><span class="o">.</span><span class="n">day_name</span><span class="p">(),</span> <span class="s1">&#39;st_tuth&#39;</span><span class="p">:</span> <span class="n">st_dates</span><span class="p">})</span>
+<span class="n">course_sched</span><span class="p">[</span><span class="s1">&#39;date_toprint&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">course_sched</span><span class="o">.</span><span class="n">dow</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> \
+            <span class="n">course_sched</span><span class="o">.</span><span class="n">st_tuth</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> 
+<span class="n">course_sched</span> <span class="o">=</span> <span class="n">course_sched</span><span class="p">[</span><span class="s1">&#39;date_toprint&#39;</span><span class="p">]</span>
+
+<span class="c1">## display the resulting date sequence</span>
+<span class="n">display</span><span class="p">(</span><span class="n">course_sched</span><span class="p">)</span>
+
+<span class="c1">## next block of code creates the</span>
+<span class="c1">## actual content; can click &quot;show&quot;</span>
+<span class="c1">## to see the underlying code</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      Tuesday 01-04
+1     Thursday 01-06
+2      Tuesday 01-11
+3     Thursday 01-13
+4      Tuesday 01-18
+5     Thursday 01-20
+6      Tuesday 01-25
+7     Thursday 01-27
+8      Tuesday 02-01
+9     Thursday 02-03
+10     Tuesday 02-08
+11    Thursday 02-10
+12     Tuesday 02-15
+13    Thursday 02-17
+14     Tuesday 02-22
+15    Thursday 02-24
+16     Tuesday 03-01
+17    Thursday 03-03
+18     Tuesday 03-08
+Name: date_toprint, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide_input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## create the actual content</span>
+
+<span class="c1">### list of concepts</span>
+<span class="n">concepts</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Course intro. and checking software setup&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;Workflow basics: command line, Github workflow, basic LaTeX syntax, pre-analysis plans&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Workflow basics (continued)&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;Python pandas review: aggregation, joins, lambda and user-defined functions&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Python pandas review: aggregation, joins, lambda and user-defined functions&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;Problem set one work session&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Intro to merging&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Regex&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Probabilistic matching: part one&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Probabilistic matching: part two&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;Text as data: part one&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Text as data: part two&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Problem set two work session and intro to APIs&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;APIs continued&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;APIs continued; SQL part one&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;SQL part two&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Final project work session&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;Scraping + final project work session&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;Final presentations&quot;</span><span class="p">]</span>
+
+<span class="nb">len</span><span class="p">(</span><span class="n">course_sched</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">concepts</span><span class="p">)</span>
+<span class="c1">## combine</span>
+<span class="n">course_sched_concepts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Week&#39;</span><span class="p">:</span> <span class="n">course_sched</span><span class="p">,</span>
+                                     <span class="s1">&#39;Concepts&#39;</span><span class="p">:</span> <span class="n">concepts</span><span class="p">})</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">course_sched_concepts</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>19
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>19
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              Week                                           Concepts
+0    Tuesday 01-04          Course intro. and checking software setup
+1   Thursday 01-06  Workflow basics: command line, Github workflow...
+2    Tuesday 01-11                        Workflow basics (continued)
+3   Thursday 01-13  Python pandas review: aggregation, joins, lamb...
+4    Tuesday 01-18  Python pandas review: aggregation, joins, lamb...
+5   Thursday 01-20                       Problem set one work session
+6    Tuesday 01-25                                   Intro to merging
+7   Thursday 01-27                                              Regex
+8    Tuesday 02-01                   Probabilistic matching: part one
+9   Thursday 02-03                   Probabilistic matching: part two
+10   Tuesday 02-08                             Text as data: part one
+11  Thursday 02-10                             Text as data: part two
+12   Tuesday 02-15     Problem set two work session and intro to APIs
+13  Thursday 02-17                                     APIs continued
+14   Tuesday 02-22                       APIs continued; SQL part one
+15  Thursday 02-24                                       SQL part two
+16   Tuesday 03-01                         Final project work session
+17  Thursday 03-03              Scraping + final project work session
+18   Tuesday 03-08                                Final presentations
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide_input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## add datacamp modules conditionally</span>
+<span class="n">col</span> <span class="o">=</span> <span class="s2">&quot;Concepts&quot;</span>
+
+<span class="c1">### older code on more exhaustive modules</span>
+<span class="c1"># topics  = [df[col] == &quot;Python basic data wrangling: data structures (vectors; lists; dataframes; matrices), control flow, and loops&quot;, </span>
+<span class="c1">#                df[col] == &quot;Python basic data wrangling: basic regular expressions and text mining&quot;,</span>
+<span class="c1">#                df[col] ==  &quot;Python basic data wrangling: combining data (row binds, column binds, joins); aggregation&quot;,</span>
+<span class="c1">#                df[col] == &quot;Review of visualization: ggplot; plotnine&quot;,</span>
+<span class="c1">#                df[col] == &quot;Python: writing your own functions&quot;,</span>
+<span class="c1">#                df[col] == &quot;Python: text data using nltk and gensim&quot;,</span>
+<span class="c1">#                df[col] ==  &quot;SQL: reading data from a database and basic SQL (postgres) syntax&quot;,</span>
+<span class="c1">#                df[col] == &quot;SQL: more advanced SQL syntax (subqueries; window functions)&quot;,</span>
+<span class="c1">#                df[col] == &quot;Python: reading data from APIs and basic web scraping&quot;]</span>
+<span class="c1"># datacamp_modules = [&quot;Python basics; python lists; Pandas: extracting and transforming data; Intermediate python for data science (loops)&quot;,</span>
+<span class="c1">#                    &quot;First three modules of regular expressions in Python&quot;,</span>
+<span class="c1">#                    &quot;Merging DataFrames with Pandas&quot;,</span>
+<span class="c1">#                    &quot;Introduction to Data Visualization with ggplot2&quot;,</span>
+<span class="c1">#                    &quot;Python data science toolbox (Part one): user-written functions, default args, lambda functions and error handling&quot;,</span>
+<span class="c1">#                    &quot;Natural language processing fundamentals in Python&quot;,</span>
+<span class="c1">#                    &quot;Introduction to databases in Python&quot;,</span>
+<span class="c1">#                    &quot;Intermediate SQL&quot;,</span>
+<span class="c1">#                    &quot;Importing JSON data and working with APIs; Importing data from the Internet&quot;]</span>
+
+<span class="n">topics_trunc</span> <span class="o">=</span> <span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">==</span>  <span class="s2">&quot;Workflow basics (continued)&quot;</span><span class="p">,</span>
+               <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Merging (continued) and PSET 1 review&quot;</span><span class="p">]</span>
+<span class="n">datacamp_modules_trunc</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Data manipulation with Pandas&quot;</span><span class="p">,</span>
+                         <span class="s2">&quot;Regular expressions for pattern matching&quot;</span><span class="p">]</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;DataCamp module(s) (if any)&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">topics_trunc</span><span class="p">,</span> 
+                                     <span class="n">datacamp_modules_trunc</span><span class="p">,</span> 
+                                     <span class="n">default</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+
+<span class="n">date_col</span> <span class="o">=</span> <span class="s2">&quot;Week&quot;</span>
+<span class="n">due_dates</span> <span class="o">=</span> <span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Tuesday 04-20&quot;</span><span class="p">,</span>
+            <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Tuesday 04-27&quot;</span><span class="p">,</span>
+            <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Thursday 05-13&quot;</span><span class="p">,</span>
+             <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Tuesday 05-18&quot;</span><span class="p">,</span>
+             <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Thursday 05-20&quot;</span><span class="p">,</span>
+            <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Tuesday 06-01&quot;</span><span class="p">]</span>
+<span class="n">assig</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Problem set one&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Final project step 1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Problem set two: part one&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Problem set two: part two&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Final project step 2 (due Sunday 05.23 at 11:59 PM EST)&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Slides for final presentation (due Tuesday 06.01 at 5 PM EST)&quot;</span><span class="p">]</span>
+
+
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;Due (11:59 PM EST unless otherwise specified)&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">due_dates</span><span class="p">,</span>
+                     <span class="n">assig</span><span class="p">,</span>
+                     <span class="n">default</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+<span class="c1">## add slides or tutorial link</span>
+<span class="c1"># df[&#39;Link to slides or tutorial&#39;] = np.select([df[&quot;Concepts&quot;] == &quot;Course intro. and checking software setup&quot;,</span>
+<span class="c1">#                                              df[&quot;Concepts&quot;] == &quot;Workflow basics: command line, Github workflow, basic LaTeX syntax, pre-analysis plans&quot;],</span>
+<span class="c1">#                                             [&quot;https://github.com/rebeccajohnson88/qss20_slides_activities/blob/main/slides/qss20_s21_class1.pdf&quot;,</span>
+<span class="c1">#                                             &quot;https://github.com/rebeccajohnson88/qss20_slides_activities/blob/main/slides/qss20_s21_class2.pdf&quot;],</span>
+<span class="c1">#                                             default = &quot;&quot;)</span>
+
+<span class="c1"># df[&#39;Link to slides or tutorial&#39;] = np.where(df[&#39;Link to slides or tutorial&#39;] != &quot;&quot;,</span>
+<span class="c1">#                         &#39;&lt;a target=&quot;_blank&quot; href=&#39; + df[&#39;Link to slides or tutorial&#39;] + &#39;&gt;&lt;div&gt;&#39; + &quot;Link&quot; + &#39;&lt;/div&gt;&lt;/a&gt;&#39;,</span>
+<span class="c1">#                         &quot;&quot;)</span>
+
+<span class="c1"># df[&#39;Link to activity (blank)&#39;] = np.select([df[&quot;Concepts&quot;] == &quot;Workflow basics: command line, Github workflow, basic LaTeX syntax, pre-analysis plans&quot;],</span>
+<span class="c1">#                                             [&quot;https://github.com/rebeccajohnson88/qss20_slides_activities/blob/main/activities/00_latex_output_examples.ipynb&quot;],</span>
+<span class="c1">#                                             default = &quot;&quot;)</span>
+
+<span class="c1"># df[&#39;Link to activity (blank)&#39;] = np.where(df[&#39;Link to activity (blank)&#39;] != &quot;&quot;,</span>
+<span class="c1">#                         &#39;&lt;a target=&quot;_blank&quot; href=&#39; + df[&#39;Link to activity (blank)&#39;] + &#39;&gt;&lt;div&gt;&#39; + &quot;Link&quot; + &#39;&lt;/div&gt;&lt;/a&gt;&#39;,</span>
+<span class="c1">#                         &quot;&quot;)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide_input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">escape</span> <span class="o">=</span> <span class="kc">False</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Week</th>
+      <th>Concepts</th>
+      <th>DataCamp module(s) (if any)</th>
+      <th>Due (11:59 PM EST unless otherwise specified)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tuesday 01-04</td>
+      <td>Course intro. and checking software setup</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Thursday 01-06</td>
+      <td>Workflow basics: command line, Github workflow, basic LaTeX syntax, pre-analysis plans</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tuesday 01-11</td>
+      <td>Workflow basics (continued)</td>
+      <td>Data manipulation with Pandas</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Thursday 01-13</td>
+      <td>Python pandas review: aggregation, joins, lambda and user-defined functions</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tuesday 01-18</td>
+      <td>Python pandas review: aggregation, joins, lambda and user-defined functions</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Thursday 01-20</td>
+      <td>Problem set one work session</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tuesday 01-25</td>
+      <td>Intro to merging</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Thursday 01-27</td>
+      <td>Regex</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tuesday 02-01</td>
+      <td>Probabilistic matching: part one</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Thursday 02-03</td>
+      <td>Probabilistic matching: part two</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tuesday 02-08</td>
+      <td>Text as data: part one</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Thursday 02-10</td>
+      <td>Text as data: part two</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tuesday 02-15</td>
+      <td>Problem set two work session and intro to APIs</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Thursday 02-17</td>
+      <td>APIs continued</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tuesday 02-22</td>
+      <td>APIs continued; SQL part one</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Thursday 02-24</td>
+      <td>SQL part two</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tuesday 03-01</td>
+      <td>Final project work session</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Thursday 03-03</td>
+      <td>Scraping + final project work session</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tuesday 03-08</td>
+      <td>Final presentations</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table></div></div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">QSS 20/PBPL 40.01 Modern Statistical Computing</a>
+    <a class='right-next' id="next-link" href="sip_finalproject.html" title="next page">Final Project: Social Impact Practicum</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Rebecca Johnson<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>

@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project: Social Impact Practicum &#8212; QSS 20. Modern Statistical Computing</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Evaluation and grading" href="eval_grades_py.html" />
+    <link rel="prev" title="Course schedule" href="course_schedule.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/laptop.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">QSS 20. Modern Statistical Computing</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  Course Overview
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="course_schedule.html">
+   Course schedule
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Final Project: Social Impact Practicum
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="eval_grades_py.html">
+   Evaluation and grading
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dartmouth_policies.html">
+   Dartmouth Policies
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="enrollment.html">
+   Enrollment and Waitlist
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Software setup
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="software_setup.html">
+   Overview of tools
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/docs/sip_finalproject.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-motivation">
+   Project motivation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-process-and-possible-broad-questions">
+   Data process and possible broad questions:
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#covid-19-and-changes-in-suicidal-ideation">
+     1. COVID-19 and changes in suicidal ideation:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#covid-19-and-interactions-with-law-enforcement">
+     2. COVID-19 and interactions with law enforcement:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#text-analysis-and-uncovering-demographic-or-regional-differences-in-family-caregiver-experiences">
+     3. Text Analysis and Uncovering Demographic or Regional Differences in Family Caregiver Experiences:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#logistics">
+   Logistics
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="final-project-social-impact-practicum">
+<span id="finalproject-sip"></span><h1>Final Project: Social Impact Practicum<a class="headerlink" href="#final-project-social-impact-practicum" title="Permalink to this headline">¶</a></h1>
+<p>For our final course project, we are going to be applying the data science skills you learn in the course to an important matter of public policy: how well are U.S. employers’ protecting the health and safety of temporary guestworkers?</p>
+<p>With support from the <a class="reference external" href="https://students.dartmouth.edu/social-impact/">Dartmouth Center for Social Impact</a>, our final project will be a <a class="reference external" href="https://students.dartmouth.edu/social-impact/programs-initiatives/students/social-impact-practicums-sips">Social Impact Practicum</a>, or a chance for you to use your data science skills to help a real-world organization.</p>
+<div class="section" id="project-motivation">
+<h2>Project motivation<a class="headerlink" href="#project-motivation" title="Permalink to this headline">¶</a></h2>
+<p>The START (Systemic, Therapeutic, Assessment, Resources, and Treatment) model at the University of New Hampshire is a comprehensive model of service supporting the optimization of independence, treatment, and community living for individuals with intellectual/developmental disabilities (IDD) and mental health needs. Here is a website with more information about their work: <a class="reference external" href="https://centerforstartservices.org/">The Center for Start Services</a></p>
+</div>
+<div class="section" id="data-process-and-possible-broad-questions">
+<h2>Data process and possible broad questions:<a class="headerlink" href="#data-process-and-possible-broad-questions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="covid-19-and-changes-in-suicidal-ideation">
+<h3>1. COVID-19 and changes in suicidal ideation:<a class="headerlink" href="#covid-19-and-changes-in-suicidal-ideation" title="Permalink to this headline">¶</a></h3>
+<p>The COVID-19 lockdowns dramatically changed the lives of START participants and caregivers. In particular, the lockdown might have led to increases in suicidal ideation through a variety of mechanisms:</p>
+<ul class="simple">
+<li><p>Decreased access to mental health support: as lockdowns restricted medical care to emergency care provision, and mental health support moved to virtual formats, participants might have faced decreased access</p></li>
+<li><p>Stress related to living situations: lockdowns also increased the amount of time that individuals spent in closely confined living situations. This might have affected mental health.</p></li>
+</ul>
+<p>This project could analyze over-time variation in suicidal ideation and contrast this variation to the timing of lockdowns. While the START participant’s exact location is considered PII and not available for students, they could examine either (1) county-level variation in lockdown timing or (2) Region-level variation.</p>
+</div>
+<div class="section" id="covid-19-and-interactions-with-law-enforcement">
+<h3>2. COVID-19 and interactions with law enforcement:<a class="headerlink" href="#covid-19-and-interactions-with-law-enforcement" title="Permalink to this headline">¶</a></h3>
+<p>In addition to possible correlations with suicidal ideation, lockdowns might have impact interactions between START participants and law enforcement, who can face challenges in responding appropriately to young adults with disabilities. In turn, there may be racial/demographic differences in how members of law enforcement respond. This project could look at how interactions with law enforcement changed during the COVID-19 pandemic and how this varies across demographic subgroups. This work would build upon the analyses of Kalb et al. (2021) who show that one in three crisis events among START participants involved contact with police, with the police response often resulting in a referral to an Emergency Department (ED). Yet COVID-19 changes in ED availability and staffing could alter these patterns.</p>
+</div>
+<div class="section" id="text-analysis-and-uncovering-demographic-or-regional-differences-in-family-caregiver-experiences">
+<h3>3. Text Analysis and Uncovering Demographic or Regional Differences in Family Caregiver Experiences:<a class="headerlink" href="#text-analysis-and-uncovering-demographic-or-regional-differences-in-family-caregiver-experiences" title="Permalink to this headline">¶</a></h3>
+<p>START conducts semi-structured interviews with caregivers of participants using the <a class="reference external" href="https://www.hsri.org/publication/Toolkit_on_Evaluating_Family_Experiences_with_Severe_Mental_Illness">Family Experiences with Severe Mental Illness Scale (FEIS)</a> . The FEIS contains various open-ended responses that may cluster into themes. For instance, in response to questions about whether mental health professionals take the caregiver’s ideas and opinions into account and involve the caregiver in treatment, themes may cluster around (1) wanting a high degree of involvement but a lack of receptivity to that involvement by mental health professionals, (2) wanting a high degree of involvement and mental health professionals encouraging it, and other patterns. This project could involve (1) using automated text analysis methods to uncover themes in question responses and (2) examining how family demographics or things like the regional safety net support are correlated with those themes.</p>
+</div>
+</div>
+<div class="section" id="logistics">
+<h2>Logistics<a class="headerlink" href="#logistics" title="Permalink to this headline">¶</a></h2>
+<p>As described in the main section of the syllabus, you’ll be split into assigned groups to work on sub-components of the project. We’ll be working from the following common repo that you’ll be added to, and have push/commit privileges for, when you’re set up on GitHub.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="course_schedule.html" title="previous page">Course schedule</a>
+    <a class='right-next' id="next-link" href="eval_grades_py.html" title="next page">Evaluation and grading</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Rebecca Johnson<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
