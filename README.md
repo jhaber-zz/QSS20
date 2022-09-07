@@ -1,5 +1,5 @@
-# QSS20
-This repository houses the code for the Jupyter Book for `QSS20: Modern Statistical Computing`, a course in the Quantitative Social Science program at Dartmouth College.
+# QSS20 site: Syllabus/course page
+This repository houses the code for the syllabus/course page Jupyter Book for `QSS20: Modern Statistical Computing`, a course in the Quantitative Social Science program at Dartmouth College.
 
 This course is taught by [Jaren Haber](https://www.jarenhaber.com/). 
 
