@@ -3,5 +3,5 @@ root: docs/index
 parts:
 - caption: Course Overview
   chapters:
-- caption: Software setup
-  chapters:
+  - file: docs/course_schedule
+  - file: docs/dartmouth_policies
