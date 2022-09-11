@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Dartmouth Policies" href="dartmouth_policies.html" />
+    <link rel="prev" title="Course schedule" href="course_schedule.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -108,15 +110,32 @@ const thebe_selector_output = ".output, .cell_output"
   Course Overview
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="course_schedule.html">
    Course schedule
   </a>
  </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Evaluation and grading
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="dartmouth_policies.html">
    Dartmouth Policies
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Software Setup
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="software_setup.html">
+   Overview of tools
   </a>
  </li>
 </ul>
@@ -128,17 +147,17 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="finalproject_overview.html">
-   Final Project Overview
+   Overview
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="finalproject_options.html">
-   Final Project Options
+   Project Options
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="finalproject_components.html">
-   Final Project Components
+   Project Components
   </a>
  </li>
 </ul>
@@ -318,8 +337,8 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#five-problem-sets-10-20-of-grade-each-50-total">
-     Five problem sets (10-20% of grade, each; 50% total)
+    <a class="reference internal nav-link" href="#five-problem-sets-50-of-total-grade-10-20-each">
+     Five problem sets (50% of total grade; 10-20% each)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -369,8 +388,8 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#five-problem-sets-10-20-of-grade-each-50-total">
-     Five problem sets (10-20% of grade, each; 50% total)
+    <a class="reference internal nav-link" href="#five-problem-sets-50-of-total-grade-10-20-each">
+     Five problem sets (50% of total grade; 10-20% each)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -399,7 +418,7 @@ title="Print to PDF"
 <h1>Evaluation and grading<a class="headerlink" href="#evaluation-and-grading" title="Permalink to this headline">#</a></h1>
 <section id="summary-and-grading-policy">
 <h2>Summary and grading policy<a class="headerlink" href="#summary-and-grading-policy" title="Permalink to this headline">#</a></h2>
-<p>You will have four cumulative late days for assignments, that can be apportioned as you see fit between the different problem sets. Late days cannot be used for the final project or final presentation. If you run over and have not submitted the pset by the following class, I ask that you not attend class as not to see the answers. There will be a deduction of 10 percentage points for each late day after you have used your allowed late days.</p>
+<p>You will have four cumulative late days for assignments, that can be apportioned as you see fit between the different problem sets. Late days cannot be used for the final project or final presentation. If you run over and have not submitted a problem set by the following class, I ask that you not attend class as not to see the answers. There will be a deduction of 10 percentage points for each late day after you have used your allowed late days.</p>
 <p>Grades may be curved if there are no students receiving A’s on the non-curved grading scale.</p>
 <div class="cell tag_hide_input docutils container">
 <div class="cell_input docutils container">
@@ -415,14 +434,10 @@ title="Print to PDF"
                   <span class="s2">&quot;Team player/participation&quot;</span><span class="p">],</span>
                 <span class="s1">&#39;Percentage&#39;</span><span class="p">:</span>
                 <span class="p">[</span><span class="mi">5</span><span class="p">,</span> 
-                  <span class="mi">50</span><span class="p">,</span>
-                  <span class="mi">35</span><span class="p">,</span>
-                  <span class="mi">10</span><span class="p">],</span>
-                <span class="s1">&#39;Deadlines&#39;</span><span class="p">:</span>
-                <span class="p">[</span><span class="s2">&quot;Throughout&quot;</span><span class="p">,</span>
-                  <span class="s2">&quot;Throughout (see course schedule and Canvas)&quot;</span><span class="p">,</span>
-                  <span class="s2">&quot;Presentation: Monday March 07; Short report: Monday March 14 (both sections)&quot;</span><span class="p">,</span>
-                  <span class="s2">&quot;Throughout&quot;</span><span class="p">]})</span> 
+                 <span class="mi">50</span><span class="p">,</span>
+                 <span class="mi">35</span><span class="p">,</span>
+                 <span class="mi">10</span><span class="p">],</span>
+                             <span class="p">})</span> 
 
 <span class="n">HTML</span><span class="p">(</span><span class="n">grade_summary</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 </pre></div>
@@ -434,29 +449,24 @@ title="Print to PDF"
     <tr style="text-align: right;">
       <th>Assignments</th>
       <th>Percentage</th>
-      <th>Deadlines</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Datacamp modules</td>
       <td>5</td>
-      <td>Throughout</td>
     </tr>
     <tr>
       <td>Five problem sets</td>
       <td>50</td>
-      <td>Throughout (see course schedule and Canvas)</td>
     </tr>
     <tr>
       <td>Final project</td>
       <td>35</td>
-      <td>Presentation: Monday March 07; Short report: Monday March 14 (both sections)</td>
     </tr>
     <tr>
       <td>Team player/participation</td>
       <td>10</td>
-      <td>Throughout</td>
     </tr>
   </tbody>
 </table></div></div>
@@ -468,17 +478,17 @@ title="Print to PDF"
 <h3>Datacamp modules to support programming topics (5% of grade)<a class="headerlink" href="#datacamp-modules-to-support-programming-topics-5-of-grade" title="Permalink to this headline">#</a></h3>
 <p>The DataCamp modules are mainly to support your work on the problem sets and final project by giving you additional practice prior to our in-class activities. As a result, they will be graded on a “complete” and “incomplete” basis, regardless of how many points you received on the assignment itself. This means that you shouldn’t get stuck partway through, since you can always ask to be shown the answer with a points deduction. Conversely, if the concepts are review, these should be very quick to complete, but if you’d prefer to skip, you can talk to me and I will reapportion the 5% to your second problem set.</p>
 </section>
-<section id="five-problem-sets-10-20-of-grade-each-50-total">
-<h3>Five problem sets (10-20% of grade, each; 50% total)<a class="headerlink" href="#five-problem-sets-10-20-of-grade-each-50-total" title="Permalink to this headline">#</a></h3>
+<section id="five-problem-sets-50-of-total-grade-10-20-each">
+<h3>Five problem sets (50% of total grade; 10-20% each)<a class="headerlink" href="#five-problem-sets-50-of-total-grade-10-20-each" title="Permalink to this headline">#</a></h3>
 <p>DataCamp provides a very smooth introduction to programming, in the sense that they provide you with example code that gets you ~80% of the way to the solution, with you needing to apply that code to reach the other ~20%.</p>
-<p>In contrast, the problems sets will assess your ability to apply the concepts to data that is substantially messier, and problems that are substantially more difficult, than the ones in the DataCamp modules. More details on the problem sets will be provided the week before each is released,  but roughly, the workflow will be:</p>
+<p>In contrast, the problem sets will assess your ability to apply the concepts to data that is substantially messier, and problems that are substantially more difficult, than the ones in DataCamp. More details on the problem sets will be provided the week before each is released, but here’s the rough workflow:</p>
 <ul class="simple">
-<li><p>Accessing the problem set and data via Canvas (pset one) or GitHub and/or jhub (psets two - five)</p></li>
-<li><p>Working to produce the following outputs for each problem set:</p>
+<li><p>Access the problem set and data via GitHub or Jhub</p></li>
+<li><p>Work to produce the following outputs for each problem set:</p>
 <ul>
-<li><p>A raw .ipynb (or .Rmd file) with the code for the pset</p></li>
-<li><p>A compiled pdf that displays that code, as well as the answers to the written questions. These written questions will involve using some Latex syntax for equations and formatting.</p></li>
-<li><p>When applicable (e.g., part of the pset is run in script form), a supporting .py or .R file</p></li>
+<li><p>A raw <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> with the code for the problem set</p></li>
+<li><p>A compiled pdf that displays that code and also answers the written questions. These written questions will involve using some LaTeX syntax for equations and formatting.</p></li>
+<li><p>When applicable (e.g., part of the problem set is run in script form), a supporting <code class="docutils literal notranslate"><span class="pre">.py</span></code> file</p></li>
 </ul>
 </li>
 </ul>
@@ -487,39 +497,16 @@ title="Print to PDF"
 </section>
 <section id="final-project-35-of-grade">
 <h3>Final project (35% of grade)<a class="headerlink" href="#final-project-35-of-grade" title="Permalink to this headline">#</a></h3>
-<ul class="simple">
-<li><p>I will randomly assign groups of 3-4 a few meetings in to the quarter. I’ve found that this is more effective than letting you choose your own groups for teaching you how to collaborate on technical projects with people who you may not always see eye to eye with!</p></li>
-<li><p>I’ll be releasing instructions on Canvas for two preliminary project milestones</p></li>
-<li><p>Each group will work on a project that integrates the concepts we are covering into an applied data science project. The end product will be a github repository that contains:</p>
-<ul>
-<li><p>The raw source data you used for the project. This will include portions of the data I provide to all groups and external data sources you bring to the project.</p></li>
-<li><p>A pre-analysis plan where you pre-commit to certain analyses with the data: this will be especially important for the other group to be able to replicate your work.</p></li>
-<li><p>A README for the repository that, for each file, describes in detail:</p>
-<ul>
-<li><p>Inputs to the file: e.g., raw data; a file containing credentials needed to access an API/</p></li>
-<li><p>What the file does: describe major transformations.</p></li>
-<li><p>Output: if the file produces any outputs (e.g., a cleaned dataset; a figure or graph).</p></li>
-</ul>
-</li>
-<li><p>A set of code files that transform that data into a form usable to answer the question you have posed in your descriptive research proposal.</p></li>
-<li><p>Final output:</p>
-<ol class="simple">
-<li><p>A 10-minute presentation, written in Beamer (presented in class on the dates listed above).</p></li>
-<li><p>A report written in the computer science-style conference proceedings (10 pages; will share a template; due <strong>Monday March 14th</strong>).</p></li>
-</ol>
-</li>
-</ul>
-</li>
-</ul>
+<p>You will work on a project that integrates the concepts we are covering into an applied data science project. The end product will be a final status-update presentation, a 10-page scientific report, and a complete GitHub repository. See the “Project Components” page for more information on these outputs.</p>
 </section>
 <section id="team-player-participation-10-of-grade">
 <h3>Team player/participation (10% of grade)<a class="headerlink" href="#team-player-participation-10-of-grade" title="Permalink to this headline">#</a></h3>
-<p>Data science is a highly collaborative activity in the real world and you should think of your classmates as resources rather than as competition. This part of your grade will reflect:</p>
+<p>Data science is a highly collaborative activity in the real world, and you should think of your classmates as resources rather than as competition. This part of your grade will reflect:</p>
 <ul class="simple">
-<li><p>Participation in class and help making the class interactive</p></li>
-<li><p>Participation in coding activities in class in small groups</p></li>
+<li><p>Interacting during class, e.g. asking and answering questions</p></li>
+<li><p>Participation in class coding activities in small groups</p></li>
 <li><p>Contributions to your group’s final project</p></li>
-<li><p>Helping classmates on Slack: for this, we will be using a <code class="docutils literal notranslate"><span class="pre">#problemset</span></code> channel in our class Slack for you to ask questions about roadblocks you encounter with the DataCamp activities or on the problem sets. While I will be answering questions within a window of 24 hours, I encourage you to help each other and answer each other’s questions.</p></li>
+<li><p>Activity on Piazza to help classmates and advance class learning by asking and answering questions, editing others’ questions, etc.</p></li>
 </ul>
 </section>
 </section>
@@ -552,6 +539,20 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="course_schedule.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Course schedule</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="dartmouth_policies.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Dartmouth Policies</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>
