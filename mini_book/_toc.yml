@@ -5,3 +5,8 @@ parts:
   chapters:
   - file: docs/course_schedule
   - file: docs/dartmouth_policies
+- caption: Final Project
+  chapters:
+  - file: docs/finalproject_overview
+  - file: docs/finalproject_options
+  - file: docs/finalproject_components

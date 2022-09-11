@@ -52,7 +52,7 @@ Then assign us an issue to review some progress on code/analysis.
 2. A PNAS-style scientific report written in LaTeX
 	- [See here for more details on PNAS guidelines](https://www.pnas.org/authors/submitting-your-manuscript)
 	- The specific, single-column PNAS paper template (figures display better in with one column) for you to use [can be found on Overleaf here](https://www.overleaf.com/gallery/tagged/pnas) (you can edit this directly after opening it)
-    - After you click on the link, select the single-column mathematics article template (second from left, titled *PNAS LaTeX Template for preparing single-column mathematics articles on Overleaf*) and click "Open as Template", which will copy over to your own Overleaf account
+        - After you click on the link, select the single-column mathematics article template (second from left, titled *PNAS LaTeX Template for preparing single-column mathematics articles on Overleaf*) and click "Open as Template", which will copy over to your own Overleaf account
     - To remove the DRAFT watermark, go to the .cls style file and set display watermark to false (there’ll be a small deduction if the watermark remains)
     - **Feel free to exceed the 10 pages if it leads to more legible figures.**
 
