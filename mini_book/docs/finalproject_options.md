@@ -13,6 +13,9 @@ kernelspec:
 
 # Project Options
 
+You will select one of three options for your final project:
+
+
 ## 1. Social Impact Practicum topic: Training medical students to work with Intellectual and Developmental Disabilities (IDD)
 
 With support from the [Dartmouth Center for Social Impact](https://students.dartmouth.edu/social-impact/), one option for your final project is to complete a [Social Impact Practicum](https://students.dartmouth.edu/social-impact/programs-initiatives/students/social-impact-practicums-sips): a chance for you to use your data science skills to help a real-world organization. If you choose this option, you will apply yourself to an important issue in public health: *How do medical professionals interact with patients with Intellectual and Developmental Disabilities (IDD), and how can medical student training improve this?*

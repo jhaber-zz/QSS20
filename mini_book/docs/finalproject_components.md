@@ -13,6 +13,9 @@ kernelspec:
 
 # Project Components
 
+Please check the Course Schedule for the due date for each of these final project components:
+
+
 ## Milestone one
 
 Before starting milestone one: 
