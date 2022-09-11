@@ -11,7 +11,7 @@ kernelspec:
 
 (finalproject_options)=
 
-# Final Project Options
+# Project Options
 
 ## 1. Social Impact Practicum topic: Training medical students to work with Intellectual and Developmental Disabilities (IDD)
 
