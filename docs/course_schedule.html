@@ -122,6 +122,28 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
 </ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Final Project
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="finalproject_overview.html">
+   Final Project Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="finalproject_options.html">
+   Final Project Options
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="finalproject_components.html">
+   Final Project Components
+  </a>
+ </li>
+</ul>
 
     </div>
 </nav></div>
@@ -428,26 +450,17 @@ Name: day_date, dtype: object
            <span class="s2">&quot;Supervised Learning with scikit-learn&quot;</span><span class="p">]</span>
 
 <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">**Optional DataCamp modules for further learning:**</span>
+<span class="sd">**Optional DataCamp courses &amp; chapters for further learning:**</span>
 
-<span class="sd">- Python: basics, lists, writing your own functions</span>
-<span class="sd">- Intermediate python for data science (loops)</span>
-<span class="sd">- Object-oriented programming (OOP) basics</span>
-<span class="sd">- Regular expressions in Python (first three modules)</span>
-<span class="sd">- Merging tables with different join types</span>
-<span class="sd">- Python data science toolbox (Part one): user-written functions, default args, lambda functions and error handling</span>
-<span class="sd">- Natural language processing fundamentals in Python</span>
+<span class="sd">- Intermediate python: loops</span>
+<span class="sd">- Python data science toolbox (Part 1)</span>
+<span class="sd">- Object-Oriented Programming in Python: OOP Fundamentals</span>
+<span class="sd">- Regular expressions in Python (first three chapters)</span>
+<span class="sd">- Introduction to natural language processing in Python</span>
 <span class="sd">- Introduction to databases in Python</span>
-<span class="sd">- Importing JSON data and working with APIs</span>
-<span class="sd">- Python: reading data from APIs and basic web scraping</span>
-<span class="sd">- Importing data from the internet</span>
-<span class="sd">- Python basic data wrangling: data structures (vectors; lists; dataframes; matrices), control flow, and loops</span>
-<span class="sd">- Python basic data wrangling: basic regular expressions and text mining</span>
-<span class="sd">- Python basic data wrangling: combining data (row binds, column binds, joins); aggregation</span>
-<span class="sd">- Python: text data using nltk and gensim</span>
-<span class="sd">- Intermediate SQL</span>
-<span class="sd">- SQL: reading data from a database and basic SQL (postgres) syntax</span>
-<span class="sd">- SQL: more advanced SQL syntax (subqueries; window functions)</span>
+<span class="sd">- Intermediate importing data in python</span>
+<span class="sd">- Intermediate SQL queries</span>
+<span class="sd">- Web scraping in python</span>
 <span class="sd">- Introduction to data visualization with MatPlotLib</span>
 <span class="sd">- Introduction to data visualization with ggplot2</span>
 <span class="sd">&#39;&#39;&#39;</span>
@@ -459,7 +472,7 @@ Name: day_date, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;\n**Optional DataCamp modules for further learning:**\n\n- Python: basics, lists, writing your own functions\n- Intermediate python for data science (loops)\n- Object-oriented programming (OOP) basics\n- Regular expressions in Python (first three modules)\n- Merging tables with different join types\n- Python data science toolbox (Part one): user-written functions, default args, lambda functions and error handling\n- Natural language processing fundamentals in Python\n- Introduction to databases in Python\n- Importing JSON data and working with APIs\n- Python: reading data from APIs and basic web scraping\n- Importing data from the internet\n- Python basic data wrangling: data structures (vectors; lists; dataframes; matrices), control flow, and loops\n- Python basic data wrangling: basic regular expressions and text mining\n- Python basic data wrangling: combining data (row binds, column binds, joins); aggregation\n- Python: text data using nltk and gensim\n- Intermediate SQL\n- SQL: reading data from a database and basic SQL (postgres) syntax\n- SQL: more advanced SQL syntax (subqueries; window functions)\n- Introduction to data visualization with MatPlotLib\n- Introduction to data visualization with ggplot2\n&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;\n**Optional DataCamp courses &amp; chapters for further learning:**\n\n- Intermediate python: loops\n- Python data science toolbox (Part 1)\n- Object-Oriented Programming in Python: OOP Fundamentals\n- Regular expressions in Python (first three chapters)\n- Introduction to natural language processing in Python\n- Introduction to databases in Python\n- Intermediate importing data in python\n- Intermediate SQL queries\n- Web scraping in python\n- Introduction to data visualization with MatPlotLib\n- Introduction to data visualization with ggplot2\n&#39;
 </pre></div>
 </div>
 </div>
@@ -480,7 +493,7 @@ Name: day_date, dtype: object
                <span class="s2">&quot;Problem set two (due Sunday 10-09)&quot;</span><span class="p">,</span>
                <span class="s2">&quot;Final project milestone 1 (due Friday 10-21);&lt;br&gt;Problem set three (due Sunday 10-23)&quot;</span><span class="p">,</span>
                <span class="s2">&quot;Problem set four (due Friday 11-04);&lt;br&gt;Final project milestone 2 (due Sunday 11-06) &quot;</span><span class="p">,</span>
-               <span class="s2">&quot;Problem set five (due Friday 11-18);&lt;br&gt;Final project presentation (paper due Monday 11-21)&quot;</span><span class="p">]</span>
+               <span class="s2">&quot;Problem set five (due Friday 11-18);&lt;br&gt;Final project presentation (paper due Tuesday 11-22)&quot;</span><span class="p">]</span>
 
 <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Due (11:59 PM EST unless otherwise specified)&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">due_dates</span><span class="p">,</span>
                                                                 <span class="n">assignments</span><span class="p">,</span>
@@ -618,7 +631,7 @@ Name: day_date, dtype: object
       <td>Monday 11-14</td>
       <td>Final presentations</td>
       <td></td>
-      <td>Problem set five (due Friday 11-18);<br>Final project presentation (paper due Monday 11-21)</td>
+      <td>Problem set five (due Friday 11-18);<br>Final project presentation (paper due Tuesday 11-22)</td>
     </tr>
   </tbody>
 </table></div></div>

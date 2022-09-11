@@ -25,7 +25,7 @@ Some students may wish to take part in religious observances that occur during t
 
 ## Absences
 
-Class time will provide you with hands-on experience practicing the concepts and the opportunity to get help from myself and classmates. To encourage you to attend classes, I will be taking attendance. However, given unpredictable travel in the time of COVID and other personal emergencies, you may miss three classes without it affecting your grade.
+Class time will provide you with hands-on experience practicing the concepts and the opportunity to get help from myself and classmates. To encourage you to attend classes, I will be taking attendance. However, given unpredictable travel in the time of COVID and other personal emergencies, you may have **two** unexcused absences without it affecting your grade.
 
 
 ## Academic Integrity

@@ -13,3 +13,8 @@ This course is meant to build upon your introductory programming course and to e
 - *Required*: COSC 1, ENGS 20, or another programming course approved by the QSS Chair.
 - *Recommended*: introductory statistics course.
 
+## DataCamp as learning resource
+
+**This class has no textbook.** Instead, we will use DataCamp to introduce you to course concepts, and you're encouraged to use other online resources like [StackOverflow](https://stackoverflow.com/) to fill in the gaps. DataCamp modules feature short introductory videos to a concept (e.g., loops), which you can click through if you're already familiar with the concept. Next is a series of tasks where you will write code, submit to test whether your code does what it's supposed to, and then progress to the next task. You can access these modules on the course page within DataCamp, which you'll sign up for using your Dartmouth email. [You can join that here.](https://www.datacamp.com/groups/shared_links/434e7826f38af70536acc1d3bf83fe921babc9c35b966195cf577468505c0473) 
+
+**Please complete all assigned modules *before* the corresponding class,** so you can get more from the in-class activities. See the DataCamp course page for specific assigned modules (which should generally match the course schedule) as well as optional modules you are welcome to complete if useful to you (these are listed as due on 11.23 but are NOT required).
