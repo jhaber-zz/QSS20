@@ -35,9 +35,11 @@ In the coming weeks, I will work with the project partner to develop a few broad
 **This option requires working in a group.**
 
 
-## 2. Deeper dive into problem set data
+## 2. Deeper dive into felony sentencing data used in problem sets 1 and 2
 
-In the first two problem sets, you will use and familiarize yourself with a real-world data source I am finalizing. In this option, you’d do a more rigorous/deeper dive into a question that uses this data. More info on this soon. 
+In the first two problem sets, you used and got familiar with the Cook County State Attorney’s Office Felony Sentencing Data to investigate racial disparities in sentence length and within-judge disparities. With this project option, you’d do a deeper dive into the felony sentencing data to address another question, such as:
+1. more rigorous analyses of disparities using causal inference techniques
+2. analyses of other fields in the data (e.g., neighborhood disparities; how judge demographics relate to sentencing behavior)
 
 **This option requires working in a group.**
 
