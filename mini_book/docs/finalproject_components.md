@@ -19,7 +19,7 @@ Please check the Course Schedule for the due date for each of these final projec
 ## Milestone one
 
 Before starting milestone one: 
-- Fill out the final project group form (forthcoming)
+- Fill out [the final project group form](https://forms.gle/QMXzFohZ5yxs94yD6)
 - Read the [report for one Spring 2021 project](https://github.com/rebeccajohnson88/qss20_s21_proj/tree/main/memos/final_papers) and get a sense for its strengths and weaknesses. What can you learn from their report? What can you improve on?
 - Copy to your own Overleaf account [the milestone 1 template](https://www.overleaf.com/9461636581djcsgynkwkgk) and **only edit your local copy** (please don't change the template!)
   - You need to first setup an Overleaf account with your Dartmouth email (free) and log in
@@ -38,7 +38,7 @@ Create a private GitHub repository for your team that contains:
 - A link to cloud storage where you keep the data (e.g., Dropbox, Google Drive)
 
 Add Dr. Jaren + the TA(s) as collaborators:
-- Our GitHub usernames: jhaber-zz; eunice30718
+- Our GitHub usernames: jhaber-zz; euniceyliu
 
 Then assign us an issue to review some progress on code/analysis.
 - You do NOT need to be close to finished for this. We just want to see that you’ve loaded the data and started to write some code

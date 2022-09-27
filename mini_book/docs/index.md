@@ -13,6 +13,22 @@ This course is meant to build upon your introductory programming course and to e
 - *Required*: COSC 1, ENGS 20, or another programming course approved by the QSS Chair.
 - *Recommended*: introductory statistics course.
 
+## Office hours
+
+### By day of the week
+
+* Monday: 2:15-3:15 PM (Prof. OH), 8-9 PM (peer tutoring)
+* Tuesday: 1:30-2:30 (TA OH)
+* Wednesday: 2:15-3:15 (Prof. OH)
+* Thursday: 7-8 PM (peer tutoring)
+* Friday: none
+
+### Links & locations
+
+* [Sign up for virtual/private OH with Prof. Haber](https://calendly.com/jaren_haber_qss), drop-ins welcome to **103 Silsby**
+* [Sign up](https://grouptutoring.dartmouth.edu/terms/22F/groups/12168) and [zoom link](https://dartmouth.zoom.us/j/96961238093?pwd=Y0tXYW5ibXpVMEIzcDh3dmhNck9LUT09) for group tutoring with Ramsey Ash in **119 Silsby**
+* [Zoom link for TA OH](https://dartmouth.zoom.us/j/3848466647) with Eunice Liu
+
 ## DataCamp as learning resource
 
 **This class has no textbook.** Instead, we will use DataCamp to introduce you to course concepts, and you're encouraged to use other online resources like [StackOverflow](https://stackoverflow.com/) to fill in the gaps. DataCamp modules feature short introductory videos to a concept (e.g., loops), which you can click through if you're already familiar with the concept. Next is a series of tasks where you will write code, submit to test whether your code does what it's supposed to, and then progress to the next task. You can access these modules on the course page within DataCamp, which you'll sign up for using your Dartmouth email. [You can join that here.](https://www.datacamp.com/groups/shared_links/434e7826f38af70536acc1d3bf83fe921babc9c35b966195cf577468505c0473) 

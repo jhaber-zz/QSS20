@@ -4,6 +4,7 @@ parts:
 - caption: Course Overview
   chapters:
   - file: docs/course_schedule
+  - file: docs/useful_links_f22
   - file: docs/eval_grades_py
   - file: docs/dartmouth_policies
 - caption: Software Setup
