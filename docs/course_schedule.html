@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Course schedule &#8212; QSS 20. Modern Statistical Computing</title>
+    <title>Course Schedule &#8212; QSS 20. Modern Statistical Computing</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Dartmouth Policies" href="dartmouth_policies.html" />
+    <link rel="next" title="Useful Links (Fall 2022)" href="useful_links_f22.html" />
     <link rel="prev" title="QSS 20. Modern Statistical Computing" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -113,12 +113,34 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Course schedule
+   Course Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="useful_links_f22.html">
+   Useful Links (Fall 2022)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="eval_grades_py.html">
+   Evaluation and Grading
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="dartmouth_policies.html">
    Dartmouth Policies
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Software Setup
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="software_setup.html">
+   Overview of tools
   </a>
  </li>
 </ul>
@@ -130,17 +152,17 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="finalproject_overview.html">
-   Final Project Overview
+   Overview
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="finalproject_options.html">
-   Final Project Options
+   Project Options
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="finalproject_components.html">
-   Final Project Components
+   Project Components
   </a>
  </li>
 </ul>
@@ -294,7 +316,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Course schedule</h1>
+                <h1>Course Schedule</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -307,10 +329,11 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="course-schedule">
-<h1>Course schedule<a class="headerlink" href="#course-schedule" title="Permalink to this headline">#</a></h1>
-<p>Here is the current week-by-week schedule 📅 . We may adjust as we go along. To get started, we’re going to create the calendar of weeks for the course programmatically rather than manually!</p>
+<h1>Course Schedule<a class="headerlink" href="#course-schedule" title="Permalink to this headline">#</a></h1>
 <p>The course will meet on Monday and Wednesday from 3:30 to 5:20 PM EST.</p>
-<div class="cell docutils container">
+<p>Here is the current week-by-week schedule 📅 . We may adjust as we go along.</p>
+<p>To get started, let’s create the course schedule using the pandas module in Python. <strong>Click “show” to see the underlying code!</strong></p>
+<div class="cell tag_hide_input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import modules</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -369,22 +392,21 @@ Name: day_date, dtype: object
 </div>
 </div>
 <p>The next few blocks of code creates the actual schedule content by joining the above list of dates with course concepts.</p>
-<p><strong>Click “show” to see the underlying code!</strong></p>
 <div class="cell tag_hide_input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create basic schedule content</span>
 
 <span class="c1"># list of concepts</span>
-<span class="n">concepts</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Course intro. and checking software setup&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Pandas: aggregation, joins, lambda, user-defined functions&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;More Pandas&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Workflow basics: command line, JupyterHub, Github workflow&quot;</span><span class="p">,</span>
+<span class="n">concepts</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Course intro. &amp; software setup&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Pandas: aggregation, joins, lambda&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Pandas wrap-up &amp; user-defined functions&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Workflow basics: command line &amp; Github&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Catchup and LaTeX&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Introduction to merging&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Regular expressions (Regex)&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Probabilistic matching&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Text as data: part one&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Text as data: part two&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Catchup/more text as data&quot;</span><span class="p">,</span>
             <span class="s2">&quot;APIs&quot;</span><span class="p">,</span>
             <span class="s2">&quot;More APIs (Twitter)&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Supervised machine learning: part 1&quot;</span><span class="p">,</span>
@@ -409,26 +431,26 @@ Name: day_date, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>               Date                                           Concepts
-0      Monday 09-12          Course intro. and checking software setup
-1   Wednesday 09-14  Pandas: aggregation, joins, lambda, user-defin...
-2      Monday 09-19                                        More Pandas
-3   Wednesday 09-21  Workflow basics: command line, JupyterHub, Git...
-4      Monday 09-26                            Introduction to merging
-5   Wednesday 09-28                        Regular expressions (Regex)
-6      Monday 10-03                             Probabilistic matching
-7   Wednesday 10-05                             Text as data: part one
-8      Monday 10-10                             Text as data: part two
-9   Wednesday 10-12                          Catchup/more text as data
-10     Monday 10-17                                               APIs
-11  Wednesday 10-19                                More APIs (Twitter)
-12     Monday 10-24                Supervised machine learning: part 1
-13  Wednesday 10-26                Supervised machine learning: part 2
-14     Monday 10-31                                                SQL
-15  Wednesday 11-02                                       Web-scraping
-16     Monday 11-07                          Catchup/more web-scraping
-17  Wednesday 11-09                         Final project work session
-18     Monday 11-14                                Final presentations
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>               Date                                 Concepts
+0      Monday 09-12           Course intro. &amp; software setup
+1   Wednesday 09-14       Pandas: aggregation, joins, lambda
+2      Monday 09-19  Pandas wrap-up &amp; user-defined functions
+3   Wednesday 09-21   Workflow basics: command line &amp; Github
+4      Monday 09-26                        Catchup and LaTeX
+5   Wednesday 09-28                  Introduction to merging
+6      Monday 10-03              Regular expressions (Regex)
+7   Wednesday 10-05                   Probabilistic matching
+8      Monday 10-10                   Text as data: part one
+9   Wednesday 10-12                   Text as data: part two
+10     Monday 10-17                                     APIs
+11  Wednesday 10-19                      More APIs (Twitter)
+12     Monday 10-24      Supervised machine learning: part 1
+13  Wednesday 10-26      Supervised machine learning: part 2
+14     Monday 10-31                                      SQL
+15  Wednesday 11-02                             Web-scraping
+16     Monday 11-07                Catchup/more web-scraping
+17  Wednesday 11-09               Final project work session
+18     Monday 11-14                      Final presentations
 </pre></div>
 </div>
 </div>
@@ -521,61 +543,61 @@ Name: day_date, dtype: object
   <tbody>
     <tr>
       <td>Monday 09-12</td>
-      <td>Course intro. and checking software setup</td>
+      <td>Course intro. & software setup</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>Wednesday 09-14</td>
-      <td>Pandas: aggregation, joins, lambda, user-defined functions</td>
-      <td>Data Manipulation with Pandas</td>
+      <td>Pandas: aggregation, joins, lambda</td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>Monday 09-19</td>
-      <td>More Pandas</td>
+      <td>Pandas wrap-up & user-defined functions</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>Wednesday 09-21</td>
-      <td>Workflow basics: command line, JupyterHub, Github workflow</td>
+      <td>Workflow basics: command line & Github</td>
       <td></td>
       <td>Problem set one (due Sunday 09-25)</td>
     </tr>
     <tr>
       <td>Monday 09-26</td>
+      <td>Catchup and LaTeX</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wednesday 09-28</td>
       <td>Introduction to merging</td>
       <td>Joining Data with pandas</td>
       <td></td>
     </tr>
     <tr>
-      <td>Wednesday 09-28</td>
+      <td>Monday 10-03</td>
       <td>Regular expressions (Regex)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Monday 10-03</td>
+      <td>Wednesday 10-05</td>
       <td>Probabilistic matching</td>
       <td>Regular Expressions for Pattern Matching</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Wednesday 10-05</td>
-      <td>Text as data: part one</td>
-      <td></td>
       <td>Problem set two (due Sunday 10-09)</td>
     </tr>
     <tr>
       <td>Monday 10-10</td>
-      <td>Text as data: part two</td>
+      <td>Text as data: part one</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>Wednesday 10-12</td>
-      <td>Catchup/more text as data</td>
+      <td>Text as data: part two</td>
       <td></td>
       <td></td>
     </tr>
@@ -672,10 +694,10 @@ Name: day_date, dtype: object
             <p class="prev-next-title">QSS 20. Modern Statistical Computing</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="dartmouth_policies.html" title="next page">
+    <a class='right-next' id="next-link" href="useful_links_f22.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Dartmouth Policies</p>
+        <p class="prev-next-title">Useful Links (Fall 2022)</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
