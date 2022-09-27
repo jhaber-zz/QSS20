@@ -460,16 +460,18 @@ Name: day_date, dtype: object
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># add DataCamp modules to schedule, matching to concepts conditionally</span>
 <span class="n">match_col</span> <span class="o">=</span> <span class="s2">&quot;Concepts&quot;</span> <span class="c1"># concepts column to match on</span>
 
-<span class="n">tomatch</span> <span class="o">=</span> <span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">match_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Pandas: aggregation, joins, lambda, user-defined functions&quot;</span><span class="p">,</span>
+<span class="n">tomatch</span> <span class="o">=</span> <span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">match_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Pandas wrap-up &amp; user-defined functions&quot;</span><span class="p">,</span>
+           <span class="n">df</span><span class="p">[</span><span class="n">match_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Workflow basics: command line &amp; Github&quot;</span><span class="p">,</span>
            <span class="n">df</span><span class="p">[</span><span class="n">match_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Introduction to merging&quot;</span><span class="p">,</span>
            <span class="n">df</span><span class="p">[</span><span class="n">match_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Probabilistic matching&quot;</span><span class="p">,</span>
            <span class="n">df</span><span class="p">[</span><span class="n">match_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Supervised machine learning: part 1&quot;</span><span class="p">]</span>
 
 <span class="c1"># define DataCamp modules</span>
-<span class="n">modules</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Data Manipulation with Pandas&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;Joining Data with pandas&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;Regular Expressions for Pattern Matching&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;Supervised Learning with scikit-learn&quot;</span><span class="p">]</span>
+<span class="n">modules</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Data Manipulation with pandas (course)&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;Manipulating files and directories (ch. in Intro to Shell)&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;Joining Data with pandas (chs. 1-2)&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;Regular Expressions for Pattern Matching (chapter)&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;Supervised Learning with scikit-learn (course)&quot;</span><span class="p">]</span>
 
 <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">**Optional DataCamp courses &amp; chapters for further learning:**</span>
@@ -556,13 +558,13 @@ Name: day_date, dtype: object
     <tr>
       <td>Monday 09-19</td>
       <td>Pandas wrap-up & user-defined functions</td>
-      <td></td>
+      <td>Data Manipulation with pandas (course)</td>
       <td></td>
     </tr>
     <tr>
       <td>Wednesday 09-21</td>
       <td>Workflow basics: command line & Github</td>
-      <td></td>
+      <td>Manipulating files and directories (ch. in Intro to Shell)</td>
       <td>Problem set one (due Sunday 09-25)</td>
     </tr>
     <tr>
@@ -574,7 +576,7 @@ Name: day_date, dtype: object
     <tr>
       <td>Wednesday 09-28</td>
       <td>Introduction to merging</td>
-      <td>Joining Data with pandas</td>
+      <td>Joining Data with pandas (chs. 1-2)</td>
       <td></td>
     </tr>
     <tr>
@@ -586,7 +588,7 @@ Name: day_date, dtype: object
     <tr>
       <td>Wednesday 10-05</td>
       <td>Probabilistic matching</td>
-      <td>Regular Expressions for Pattern Matching</td>
+      <td>Regular Expressions for Pattern Matching (chapter)</td>
       <td>Problem set two (due Sunday 10-09)</td>
     </tr>
     <tr>
@@ -616,7 +618,7 @@ Name: day_date, dtype: object
     <tr>
       <td>Monday 10-24</td>
       <td>Supervised machine learning: part 1</td>
-      <td>Supervised Learning with scikit-learn</td>
+      <td>Supervised Learning with scikit-learn (course)</td>
       <td></td>
     </tr>
     <tr>
